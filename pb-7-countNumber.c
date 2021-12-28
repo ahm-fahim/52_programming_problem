@@ -5,13 +5,13 @@ int main()
 {
     // char line[] = "1 -2 10000 -50 20 7 455";
     char line[100000];
-    scanf("%[^\n]", line);
-    
     char *p, *e;
-
     long input;
     int count = 0;
     p = line;
+
+    // input array value
+    scanf("%[^\n]", line);
 
     for (p = line;; p = e)
     {
@@ -22,6 +22,8 @@ int main()
         }
         count++;
     }
+    // THIS OUR OUTPUT
     printf("%d\n", count);
+
     return 0;
 }
